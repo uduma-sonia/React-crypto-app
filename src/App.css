@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(248, 248, 248);
+  color: rgb(41, 40, 40);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coin-app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.search-coin {
+  background-color: rgb(91, 119, 119);
+  margin-bottom: 40px;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(235, 231, 231);
+}
+
+.logo {
+  width: 30px;
+  transform: translateY(5px);
+  background: transparent;
+}
+
+.coin-text,
+.coin-text span {
+  background: transparent;
+}
+
+form {
+  background-color: rgb(235, 231, 231);
+  border-radius: 20px;
+  width: 30%;
+}
+
+.coin-input {
+  background: transparent;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.coin-input::placeholder {
+  text-transform: capitalize;
+  color: #717171;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.btn-refresh {
+  position: absolute;
+  right: 3%;
+  top: 120px;
+  padding: 5px 14px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.btn-refresh:hover {
+  background-color: rgb(196, 194, 194);
+}
+
+@media only screen and (max-width: 375px) {
+  .search-coin {
+    height: 13vh;
+    margin-bottom: 70px;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  form {
+    border-radius: 10px;
+    width: 40%;
+  }
+
+  .coin-input {
+    font-size: 18px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .coin-input::placeholder {
+    font-size: 18px;
   }
 }
