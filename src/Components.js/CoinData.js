@@ -3,6 +3,8 @@ import axios from "axios";
 import Coin from "./Coin";
 import Header from "./TitleBar";
 
+import "../Styles.css";
+
 const CoinData = () => {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
@@ -35,11 +37,8 @@ const CoinData = () => {
 
   return (
     <div className="coin-app">
-      <div className="search-coin">
-        <h1 className="coin-text">
-          <span></span>
-          CoinPerk
-        </h1>
+      <section className="navbar">
+        <h1 className="logo">CoinPerk</h1>
 
         <form>
           <input
@@ -51,13 +50,21 @@ const CoinData = () => {
             placeholder="search"
           />
         </form>
-      </div>
 
-      <div>
-        <button className="btn-refresh" onClick={refreshPage}>
-          Refresh
-        </button>
-      </div>
+        <div>
+          <button className="btn-mode">
+            <i className="fas fa-moon"></i>
+          </button>
+
+          <button className="btn-refresh" onClick={refreshPage}>
+            <i class="fas fa-sync-alt"></i>
+          </button>
+
+          <button>
+            <p>usd</p>
+          </button>
+        </div>
+      </section>
 
       <Header />
 

@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
 }
+
 h4 {
   font-size: 18px;
   color: rgb(88, 88, 88);
 }
+
 .coin-header-row {
   display: flex;
   flex-direction: row;
@@ -29,6 +31,7 @@ h4 {
   justify-content: space-between;
   width: 100%;
 }
+
 .price {
   width: 110px;
 }

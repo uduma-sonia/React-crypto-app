@@ -1,5 +1,5 @@
-import "./App.css";
 import CoinData from "./Components.js/CoinData";
+// import "./App.css";
 
 const App = () => <CoinData />;
 
