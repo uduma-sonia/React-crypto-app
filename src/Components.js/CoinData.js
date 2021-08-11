@@ -14,7 +14,7 @@ const CoinData = () => {
       const res = await axios.get(
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
       );
-
+      console.log(res.data);
       setCoins(res.data);
     } catch (error) {
       alert(error);
@@ -36,7 +36,7 @@ const CoinData = () => {
   }, []);
 
   return (
-    <div className="coin-app">
+    <div>
       <section className="navbar">
         <h1 className="logo">CoinPerk</h1>
 
@@ -57,7 +57,7 @@ const CoinData = () => {
           </button>
 
           <button className="btn-refresh" onClick={refreshPage}>
-            <i class="fas fa-sync-alt"></i>
+            <i className="fas fa-sync-alt"></i>
           </button>
 
           <button>

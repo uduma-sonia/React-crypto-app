@@ -34,3 +34,56 @@ button {
   border: none;
   outline: none;
 }
+
+.coin-title {
+  border-bottom: 1px solid gray;
+  padding: 40px 0px 10px;
+}
+
+.coin-title > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-container {
+  border-bottom: 1px solid rgb(221, 218, 218);
+  padding: 25px 0px;
+}
+
+.coin-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-name,
+.title-name {
+  text-transform: uppercase;
+  width: 30%;
+  display: flex;
+}
+
+.coin-name img {
+  height: 25px;
+  width: 25px;
+}
+
+.coin-name h3 {
+  font-size: 15px;
+  color: #333333;
+  margin-left: 30px;
+}
+
+.symbol {
+  color: #5e5d5d;
+  font-weight: 300;
+  margin-left: 45px;
+}
+
+.coin-data,
+.title-data {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}

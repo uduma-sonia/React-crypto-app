@@ -1,17 +1,17 @@
 import React from "react";
-// import "../Coin.css";
 
 const Coin = ({ image, title, symbol, price, priceChange, marketcap }) => {
   return (
     <div className="coin-container">
-      {/* ACTUAL COIN */}
-      <div className="coin-row">
-        <div className="coin">
+      <div>
+        <div className="coin-name">
           <img src={image} alt="crypto-coin" />
-          <h1>
+          <h3>
             {title}
-            <span> {symbol} </span>{" "}
-          </h1>
+            {/* <span> {symbol} </span> */}
+          </h3>
+
+          <p className="symbol">{symbol}</p>
         </div>
 
         <div className="coin-data">
